@@ -12,6 +12,8 @@
 		638FE93D1F36566F00CAD75D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638FE93B1F36566F00CAD75D /* Main.storyboard */; };
 		638FE93F1F36566F00CAD75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638FE93E1F36566F00CAD75D /* Assets.xcassets */; };
 		638FE9421F36566F00CAD75D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638FE9401F36566F00CAD75D /* LaunchScreen.storyboard */; };
+		638FE94C1F36581100CAD75D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FE94B1F36581100CAD75D /* Extensions.swift */; };
+		638FE94D1F36582700CAD75D /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 638FE94A1F3656A700CAD75D /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		638FE93E1F36566F00CAD75D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		638FE9411F36566F00CAD75D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		638FE9431F36566F00CAD75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638FE94A1F3656A700CAD75D /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		638FE94B1F36581100CAD75D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		638FE9361F36566F00CAD75D /* RecognizeIt */ = {
 			isa = PBXGroup;
 			children = (
+				638FE94B1F36581100CAD75D /* Extensions.swift */,
+				638FE9491F36567500CAD75D /* CoreMLObject */,
 				638FE9371F36566F00CAD75D /* AppDelegate.swift */,
 				638FE9391F36566F00CAD75D /* ViewController.swift */,
 				638FE93B1F36566F00CAD75D /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				638FE9431F36566F00CAD75D /* Info.plist */,
 			);
 			path = RecognizeIt;
+			sourceTree = "<group>";
+		};
+		638FE9491F36567500CAD75D /* CoreMLObject */ = {
+			isa = PBXGroup;
+			children = (
+				638FE94A1F3656A700CAD75D /* Inceptionv3.mlmodel */,
+			);
+			path = CoreMLObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				638FE93A1F36566F00CAD75D /* ViewController.swift in Sources */,
+				638FE94D1F36582700CAD75D /* Inceptionv3.mlmodel in Sources */,
+				638FE94C1F36581100CAD75D /* Extensions.swift in Sources */,
 				638FE9381F36566F00CAD75D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
